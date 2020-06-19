@@ -21,7 +21,7 @@
   "scripts": {
     "dashboard": "node ./dashboard/src/server.js",
     "providence": "node --max-old-space-size=8192 ./src/cli/index.js",
-    "test:node": "nyc mocha './test/program/**/*.test.js' './dashboard/test/**/*.test.js'",
+    "test:node": "mocha './test/program/**/*.test.js'",
     "test:node:e2e": "mocha './test/program/**/*.e2e.js' './dashboard/test/**/*.e2e.js' --timeout 60000",
     "test:node:watch": "yarn test --watch"
   },
